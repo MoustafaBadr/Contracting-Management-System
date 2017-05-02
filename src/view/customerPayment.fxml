@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="1010.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerPaymentController">
+   <children>
+      <JFXComboBox fx:id="tybe" layoutX="30.0" layoutY="119.0" prefHeight="43.0" prefWidth="261.0" promptText="Tybe" style="-fx-background-color: #D8E6E7 #D8E6E7;" />
+      <JFXComboBox fx:id="names" layoutX="30.0" layoutY="197.0" onMouseClicked="#compoBoxCustomer" prefHeight="43.0" prefWidth="261.0" promptText="customer Name" style="-fx-background-color: #D8E6E7;" />
+      <JFXTextField fx:id="cash1" labelFloat="true" layoutX="30.0" layoutY="295.0" maxWidth="261.0" minWidth="261.0" prefHeight="43.0" prefWidth="261.0" promptText="cash" style="-fx-background-color: #D8E6E7;" />
+      <JFXButton fx:id="pay" buttonType="RAISED" layoutX="111.0" layoutY="389.0" onMouseClicked="#pay" prefHeight="39.0" prefWidth="109.0" style="-fx-background-color: #30A9DE; -fx-border-radius: 50px; -fx-background-radius: 50px;" text="Pay">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="table_view" layoutX="349.0" layoutY="99.0" prefHeight="388.0" prefWidth="621.0">
+        <columns>
+          <TableColumn fx:id="customerName" prefWidth="197.0" text="Customer Name" />
+          <TableColumn fx:id="Date1" prefWidth="161.0" text="Date" />
+            <TableColumn fx:id="userName" prefWidth="135.0" text="userName" />
+            <TableColumn fx:id="cash" prefWidth="126.0" text="Cash" />
+        </columns>
+      </TableView>
+      <DatePicker fx:id="date" layoutX="356.0" layoutY="36.0" prefHeight="39.0" prefWidth="149.0" promptText=" Finish Data" style="-fx-background-color: #D8E6E7;" />
+      <JFXButton fx:id="search" buttonType="RAISED" layoutX="709.0" layoutY="36.0" onMouseClicked="#search" prefHeight="39.0" prefWidth="90.0" style="-fx-background-color: #30A9DE; -fx-border-radius: 50px; -fx-background-radius: 50px;" text="search">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXComboBox fx:id="user" layoutX="521.0" layoutY="36.0" prefHeight="39.0" prefWidth="149.0" promptText="user" style="-fx-background-color: #D8E6E7;" />
+      <JFXButton fx:id="total" buttonType="RAISED" layoutX="829.0" layoutY="36.0" onMouseClicked="#total" prefHeight="39.0" prefWidth="90.0" style="-fx-background-color: #30A9DE; -fx-background-radius: 50px; -fx-border-radius: 50px;" text="Total">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</Pane>

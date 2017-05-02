@@ -1,0 +1,24 @@
+.toggle-button{
+    -fx-border-width: 0px 0px 2px 0px;
+    -fx-border-color: #EA5444;
+    -fx-border-radius: 0px;
+    -fx-background-radius: 0px;
+    -fx-background-color: none;
+    -fx-font-size: 12px; 
+    -fx-padding: 34px 15px 10px 15px;
+    -fx-font-weight:700;
+    -fx-font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    -fx-cursor:hand;
+}
+.toggle-button:hover{
+    -fx-background-color: #EA5444;
+    -fx-border-color: #212121;
+    -fx-border-width: 0px 0px 3px 0px;
+    -fx-text-fill: white;
+}
+.toggle-button:selected{
+    -fx-background-color: #959595;
+    -fx-border-color: #D7D7D7;
+    -fx-border-width: 0px 0px 3px 0px;
+    -fx-text-fill: white;
+}

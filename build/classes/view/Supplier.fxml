@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="499.0" prefWidth="1023.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SupplierController">
+   <children>
+      <Pane layoutY="5.0" prefHeight="481.0" prefWidth="987.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXTextField fx:id="name" alignment="CENTER" focusColor="#5a6483" labelFloat="true" layoutX="20.0" layoutY="56.0" maxWidth="445.0" minWidth="192.0" prefHeight="38.0" prefWidth="247.0" promptText="Name" style="-fx-background-color: #D8E6E7;">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="address" focusColor="#5a6483" labelFloat="true" layoutX="22.0" layoutY="117.0" maxWidth="445.0" minWidth="208.0" prefHeight="37.0" prefWidth="247.0" promptText="Address" style="-fx-background-color: #D8E6E7;">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+            </JFXTextField>
+            <DatePicker fx:id="date" layoutX="27.0" layoutY="182.0" prefHeight="37.0" prefWidth="247.0" promptText="Tme Line" style="-fx-background-color: #D8E6E7;" />
+            <JFXTextField fx:id="email" focusColor="#5a6483" labelFloat="true" layoutX="23.0" layoutY="250.0" maxWidth="445.0" minWidth="192.0" prefHeight="38.0" prefWidth="247.0" promptText="E-Mail" style="-fx-background-color: #D8E6E7;">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="phone" focusColor="#5a6483" labelFloat="true" layoutX="24.0" layoutY="302.0" maxWidth="445.0" minWidth="192.0" prefHeight="37.0" prefWidth="247.0" promptText="Phone" style="-fx-background-color: #D8E6E7;">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton fx:id="delete_bt" buttonType="RAISED" layoutX="896.0" layoutY="33.0" onMouseClicked="#Delete" prefHeight="37.0" prefWidth="109.0" style="-fx-background-color: #3498DB; -fx-border-radius: 50px; -fx-background-radius: 50px;" text="Delete" textFill="#eeeeee">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+            </JFXButton>
+            <TableView fx:id="table" layoutX="316.0" layoutY="80.0" prefHeight="350.0" prefWidth="695.0">
+               <columns>
+                  <TableColumn id="Cid" fx:id="ID_table" prefWidth="51.0" text="ID" />
+                  <TableColumn id="Cname" fx:id="Cname" prefWidth="104.0" text="Name" />
+                  <TableColumn id="Cpayment" fx:id="Cpayment" prefWidth="102.0" text="Payment" />
+                  <TableColumn id="Caddress" fx:id="Caddress" minWidth="6.0" prefWidth="102.0" text="Address" />
+                  <TableColumn id="Cdate" fx:id="Cdate" prefWidth="117.0" text="Date" />
+                  <TableColumn id="Cemail" fx:id="Cemail" minWidth="0.0" prefWidth="113.0" text="E_Mail" />
+                  <TableColumn fx:id="Cphone" prefWidth="104.0" text="Phone" />
+               </columns>
+            </TableView>
+            <JFXButton fx:id="update_bt" buttonType="RAISED" layoutX="175.0" layoutY="376.0" onMouseClicked="#Update" prefHeight="37.0" prefWidth="109.0" style="-fx-background-color: #3498DB; -fx-border-radius: 50px; -fx-background-radius: 50px;" text="Upadate" textFill="#eeeeee">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="add_bt" buttonType="RAISED" layoutX="37.0" layoutY="376.0" onMouseClicked="#ADD" prefHeight="37.0" prefWidth="109.0" style="-fx-background-color: #3498DB; -fx-border-radius: 50px; -fx-background-radius: 50px;" text="Add" textFill="#eeeeee">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXTextField fx:id="id_search" layoutX="329.0" layoutY="32.0" maxWidth="417.0" minWidth="417.0" prefHeight="38.0" prefWidth="417.0" promptText="ID">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font></JFXTextField>
+            <JFXButton fx:id="Search_bt" buttonType="RAISED" layoutX="759.0" layoutY="33.0" onMouseClicked="#Search" prefHeight="37.0" prefWidth="109.0" style="-fx-background-color: #3498DB; -fx-border-radius: 50px; -fx-background-radius: 50px;" text="Search" textFill="#eeeeee">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

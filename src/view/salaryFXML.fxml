@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="1010.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SalaryFXMLController">
+   <children>
+      <TableView fx:id="table" layoutX="303.0" layoutY="39.0" prefHeight="437.0" prefWidth="693.0">
+         <columns>
+            <TableColumn fx:id="firstName" prefWidth="135.0" text="First Name" />
+            <TableColumn fx:id="LastName" prefWidth="130.0" text="Last Name" />
+            <TableColumn fx:id="job" prefWidth="160.0" text="Job" />
+            <TableColumn fx:id="salary" prefWidth="120.0" text="Salary" />
+         </columns>
+      </TableView>
+      <JFXButton buttonType="RAISED" layoutX="44.0" layoutY="199.0" onAction="#bouns" prefHeight="34.0" prefWidth="178.0" style="-fx-background-color: #30A9DE; -fx-background-radius: 50px; -fx-border-radius: 50px;" text="Add bouns" textFill="#fcfafa">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="44.0" layoutY="322.0" onAction="#total" prefHeight="34.0" prefWidth="178.0" style="-fx-background-color: #30A9DE; -fx-background-radius: 50px; -fx-border-radius: 50px;" text="Compute Total" textFill="#fcfafa">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXComboBox fx:id="percent" layoutX="43.0" layoutY="117.0" prefHeight="25.0" prefWidth="178.0" style="-fx-background-color: #D8E6E7;" />
+      <Separator layoutX="271.0" layoutY="39.0" orientation="VERTICAL" prefHeight="437.0" prefWidth="0.0" style="-fx-background-color: #fcfafa;" />
+   </children>
+</AnchorPane>

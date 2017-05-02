@@ -1,0 +1,78 @@
+.log{
+    
+   -fx-background-color: white;
+    
+}
+.text-field{
+      -fx-border-width: 0.7px;
+    -fx-border-color: #D7D7D7;
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+    -fx-text-fill: black;
+    -fx-font-size: 15px; 
+    -fx-padding: 5px 35px 5px 15px;
+    -fx-background-color: white;
+
+}
+.text-field:focused{
+    -fx-border-color: #EA5444;
+
+}
+.text-field:hover{
+
+}
+.text-area{
+    -fx-border-width: 0.7px;
+    -fx-border-radius: 5px;
+    -fx-border-color: #D7D7D7;
+    -fx-text-fill: black;
+    -fx-font-size: 15px; 
+    -fx-background-color: white;
+}
+.text-area:focused{
+    -fx-border-color: #EA5444;
+   }
+.text-area *.content{
+    -fx-background-color: none;
+    -fx-padding:5;
+}
+/*******************************************************************************
+ *                                                                             *
+ * ButtonView                                                                   *
+ *                                                                             *
+ ******************************************************************************/
+
+.button{
+    -fx-border-width: 0.5px;
+    -fx-border-color: #ACACAC;
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+    -fx-background-color: white;
+    -fx-font-size: 16px; 
+    -fx-font-weight:700;
+    -fx-text-fill: white;
+    -fx-font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+}
+.button:hover{
+    -fx-background-color:#9DC8C8;
+    -fx-font-size: 12px;
+    -fx-text-fill: black;
+
+}
+.button:focused{
+   -fx-border-width: 0.5px;
+    -fx-border-color: #ACACAC;
+   -fx-border-radius: 50px;
+}
+.button:pressed{
+    -fx-background-color: #EA5444;
+    -fx-text-fill: white;
+}
+
+.hyperlink{
+    -fx-text-fill: blue;
+}
+AnchorPane{
+    /*    -fx-background-color:white;*/
+
+}

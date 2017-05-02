@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="644.0" prefWidth="1101.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SalesController">
+   <children>
+      <Pane fx:id="pane" layoutY="102.0" prefHeight="540.0" prefWidth="1101.0" />
+      <JFXButton fx:id="individual" buttonType="RAISED" layoutX="829.0" layoutY="20.0" onMouseClicked="#individualProjects" prefHeight="45.0" prefWidth="216.0" style="-fx-background-color: #30A9DE; -fx-border-radius: 50px; -fx-background-radius: 50px;" text="Individual Projects ">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="companyProjects" buttonType="RAISED" layoutX="566.0" layoutY="20.0" onMouseClicked="#companyProject" prefHeight="45.0" prefWidth="216.0" style="-fx-background-color: #30A9DE; -fx-border-radius: 50px; -fx-background-radius: 50px;" text="Company Projects">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="customer" buttonType="RAISED" layoutX="33.0" layoutY="24.0" onMouseClicked="#customer" prefHeight="45.0" prefWidth="216.0" style="-fx-background-color: #30A9DE; -fx-border-radius: 50px; -fx-background-radius: 50px;" text="Customer">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="payment" buttonType="RAISED" layoutX="302.0" layoutY="22.0" onMouseClicked="#payment" prefHeight="45.0" prefWidth="216.0" style="-fx-background-color: #30A9DE; -fx-border-radius: 50px; -fx-background-radius: 50px;" text="Payment">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+   </children>
+</Pane>

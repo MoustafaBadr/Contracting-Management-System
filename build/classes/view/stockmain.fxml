@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="575.0" prefWidth="986.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StockmainController">
+   <children>
+      <BorderPane prefHeight="522.0" prefWidth="722.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <AnchorPane fx:id="Anchor_pane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </center>
+         <top>
+            <AnchorPane prefHeight="129.0" prefWidth="924.0" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXButton fx:id="stock" buttonType="RAISED" layoutX="380.0" layoutY="37.0" onMouseClicked="#stock_pane" prefHeight="38.0" prefWidth="270.0" style="-fx-background-color: #3498DB; -fx-border-radius: 50px; -fx-background-radius: 50px;" text="Stock" textFill="#eeeeee">
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="payment_bt" buttonType="RAISED" layoutX="680.0" layoutY="37.0" onMouseClicked="#apyment" prefHeight="44.0" prefWidth="262.0" style="-fx-background-color: #3498DB; -fx-border-radius: 50px; -fx-background-radius: 50px;" styleClass="bt" text="Payment" textFill="#eeeeee">
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="67.0" layoutY="38.0" onMouseClicked="#Supplier_pane" prefHeight="42.0" prefWidth="282.0" style="-fx-background-color: #3498DB; -fx-border-radius: 50px; -fx-background-radius: 50px;" styleClass="bt" text="Supplier" textFill="#eeeeee">
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

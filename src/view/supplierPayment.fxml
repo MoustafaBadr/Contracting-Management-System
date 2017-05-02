@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="532.0" prefWidth="1001.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SupplierPaymentController">
+   <children>
+      <JFXButton fx:id="search" buttonType="RAISED" layoutX="761.0" layoutY="51.0" onMouseClicked="#search" prefHeight="26.0" prefWidth="114.0" style="-fx-background-color: #3498DB; -fx-background-radius: 50px; -fx-border-radius: 50px;" text="search" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </JFXButton>
+      <DatePicker fx:id="date1" layoutX="454.0" layoutY="51.0" prefHeight="39.0" prefWidth="273.0" promptText=" Data" style="-fx-background-color: #D8E6E7;" />
+      <TableView fx:id="table_view" layoutX="359.0" layoutY="118.0" prefHeight="368.0" prefWidth="621.0">
+         <columns>
+            <TableColumn fx:id="supplierName" prefWidth="197.0" text="supplier Name" />
+            <TableColumn fx:id="Date" prefWidth="161.0" text="Date" />
+            <TableColumn fx:id="userName" prefWidth="135.0" text="userName" />
+            <TableColumn fx:id="cash" prefWidth="126.0" text="Cash" />
+         </columns>
+      </TableView>
+      <JFXButton fx:id="pay" buttonType="RAISED" layoutX="104.0" layoutY="363.0" onMouseClicked="#pay" prefHeight="42.0" prefWidth="130.0" style="-fx-background-color: #3498DB; -fx-background-radius: 50px; -fx-border-radius: 50px;" text="Pay" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="cash1" labelFloat="true" layoutX="40.0" layoutY="266.0" maxWidth="261.0" minWidth="261.0" prefHeight="43.0" prefWidth="261.0" promptText="cash" style="-fx-background-color: #D8E6E7;" />
+      <JFXComboBox fx:id="names" layoutX="40.0" layoutY="158.0" prefHeight="43.0" prefWidth="261.0" promptText="supplier Name" style="-fx-background-color: #D8E6E7;" />
+   </children>
+</Pane>

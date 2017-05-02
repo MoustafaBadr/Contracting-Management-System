@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="493.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CompanyProjectsController">
+   <children>
+      <TableView fx:id="table_view" layoutX="373.0" layoutY="39.0" prefHeight="348.0" prefWidth="614.0">
+         <columns>
+            <TableColumn fx:id="id" prefWidth="88.0" text="ID" />
+            <TableColumn fx:id="name" prefWidth="140.0" text="Name" />
+            <TableColumn fx:id="address" prefWidth="152.0" text="Address" />
+            <TableColumn fx:id="date" prefWidth="121.0" text="Finish date" />
+            <TableColumn fx:id="paymentCoulmn" prefWidth="112.0" text="payment" />
+         </columns>
+      </TableView>
+      <JFXTextField fx:id="address1" labelFloat="true" layoutX="55.0" layoutY="103.0" maxWidth="273.0" minWidth="273.0" prefHeight="39.0" prefWidth="273.0" promptText="Address" style="-fx-background-color: #D8E6E7;" />
+      <JFXTextField fx:id="name1" labelFloat="true" layoutX="56.0" layoutY="35.0" maxWidth="273.0" minWidth="273.0" prefHeight="39.0" prefWidth="273.0" promptText="Name" style="-fx-background-color: #D8E6E7;" />
+      <DatePicker fx:id="date1" layoutX="55.0" layoutY="233.0" prefHeight="39.0" prefWidth="273.0" promptText=" Finish Data" style="-fx-background-color: #D8E6E7;" />
+      <JFXTextField fx:id="payment1" labelFloat="true" layoutX="56.0" layoutY="303.0" maxWidth="273.0" minWidth="210.0" prefHeight="39.0" prefWidth="273.0" promptText="Payment" style="-fx-background-color: #D8E6E7;" />
+      <JFXButton fx:id="delete" buttonType="RAISED" layoutX="655.0" layoutY="424.0" onMouseClicked="#delete" prefHeight="39.0" prefWidth="98.0" style="-fx-background-color: #3498DB; -fx-border-radius: 50px; -fx-background-radius: 50px;" text="Delete">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="update" buttonType="RAISED" layoutX="527.0" layoutY="424.0" onMouseClicked="#update" prefHeight="39.0" prefWidth="98.0" style="-fx-background-color: #3498DB; -fx-border-radius: 50px; -fx-background-radius: 50px;" text="Update">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="insert" buttonType="RAISED" layoutX="181.0" layoutY="423.0" onMouseClicked="#insert" prefHeight="39.0" prefWidth="112.0" style="-fx-background-color: #3498DB; -fx-border-radius: 50px; -fx-background-radius: 50px;" text="Insert">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXComboBox fx:id="companyName" layoutX="56.0" layoutY="165.0" prefHeight="39.0" prefWidth="273.0" promptText="company name" style="-fx-background-color: #D8E6E7;" />
+      <JFXTextField fx:id="after" layoutX="173.0" layoutY="368.0" maxWidth="273.0" minWidth="127.0" prefHeight="39.0" prefWidth="156.0" promptText="after Discount" style="-fx-background-color: #D8E6E7;" />
+      <JFXButton fx:id="discount" buttonType="RAISED" layoutX="38.0" layoutY="423.0" onMouseClicked="#computeDiscont" prefHeight="39.0" prefWidth="112.0" style="-fx-background-color: #3498DB; -fx-border-radius: 50px; -fx-background-radius: 50px;" text="Discount">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXComboBox fx:id="discount1" layoutX="56.0" layoutY="368.0" prefHeight="39.0" prefWidth="86.0" promptText="percent" style="-fx-background-color: #D8E6E7;" />
+      <JFXButton fx:id="reset" buttonType="RAISED" layoutX="407.0" layoutY="424.0" onMouseClicked="#reset" prefHeight="39.0" prefWidth="98.0" style="-fx-background-color: #3498DB; -fx-border-radius: 50px; -fx-background-radius: 50px;" text="Reset">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</Pane>

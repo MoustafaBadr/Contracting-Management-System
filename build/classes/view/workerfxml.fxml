@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="1010.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.WorkerfxmlController">
+   <children>
+      <Separator layoutX="306.0" layoutY="14.0" orientation="VERTICAL" prefHeight="449.0" prefWidth="0.0" />
+      <JFXButton buttonType="RAISED" layoutX="190.0" layoutY="60.0" onAction="#search" prefHeight="32.0" prefWidth="74.0" style="-fx-background-color: #30A9DE; -fx-background-radius: 50px; -fx-border-radius: 50px;" text="Search" textFill="#fcfafa">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXComboBox fx:id="projectbox" layoutX="14.0" layoutY="266.0" prefHeight="31.0" prefWidth="136.0" promptText="Project" style="-fx-background-color: #D8E6E7;" />
+      <JFXButton buttonType="RAISED" layoutX="26.0" layoutY="349.0" onAction="#join" prefHeight="32.0" prefWidth="95.0" style="-fx-background-color: #30A9DE; -fx-background-radius: 50px; -fx-border-radius: 50px;" text="Join" textFill="#fcfafa">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="180.0" layoutY="349.0" onAction="#finsh" prefHeight="32.0" prefWidth="95.0" style="-fx-background-color: #30A9DE; -fx-background-radius: 50px; -fx-border-radius: 50px;" text="Finsh" textFill="#fcfafa">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="table" layoutX="338.0" layoutY="14.0" prefHeight="449.0" prefWidth="664.0">
+         <columns>
+            <TableColumn fx:id="ID" prefWidth="60.0" text="ID" />
+            <TableColumn fx:id="firstName" prefWidth="118.0" text="First Name" />
+            <TableColumn fx:id="LastName" prefWidth="131.0" text="Last Name" />
+            <TableColumn fx:id="job" prefWidth="118.0" text="Job" />
+            <TableColumn fx:id="state" prefWidth="96.0" text="State" />
+            <TableColumn fx:id="project" prefWidth="136.0" text="project" />
+         </columns>
+      </TableView>
+      <JFXTextField fx:id="workerid" labelFloat="true" layoutX="180.0" layoutY="271.0" maxWidth="105.0" minWidth="95.0" prefHeight="31.0" prefWidth="95.0" promptText="Worker _ID" />
+      <JFXComboBox fx:id="job1" layoutX="14.0" layoutY="54.0" prefHeight="31.0" prefWidth="136.0" promptText="Job" style="-fx-background-color: #D8E6E7;" />
+   </children>
+</AnchorPane>

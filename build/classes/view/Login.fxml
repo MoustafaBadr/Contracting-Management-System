@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="449.0" prefWidth="357.0" style="-fx-background-color: white;" styleClass="log" stylesheets="@../style/MainStyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <TextField fx:id="username_txt" alignment="CENTER" layoutX="12.0" layoutY="166.0" prefHeight="37.0" prefWidth="332.0" promptText="User Name">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="password_txt" alignment="CENTER" layoutX="12.0" layoutY="235.0" prefHeight="37.0" prefWidth="332.0" promptText="Password">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </PasswordField>
+      <Button fx:id="login_bt" layoutX="57.0" layoutY="311.0" mnemonicParsing="false" onMouseClicked="#login" prefHeight="37.0" prefWidth="106.0" style="-fx-background-color: #3498DB;" styleClass="control" text="Log in" textFill="#403d3d">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Hyperlink fx:id="link" layoutX="94.0" layoutY="415.0" onMouseClicked="#Link" prefHeight="23.0" prefWidth="168.0" text="Create a New Accout? SignUp" />
+      <Button fx:id="cancel_bt" layoutX="187.0" layoutY="311.0" mnemonicParsing="false" onMouseClicked="#Cancel" prefHeight="37.0" prefWidth="106.0" style="-fx-background-color: #3498DB;" text="Cancel" />
+      <ImageView fitHeight="135.0" fitWidth="186.0" layoutX="92.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icon/login-button.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="29.0" layoutX="27.0" layoutY="169.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icon/4.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="27.0" layoutX="25.0" layoutY="239.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icon/5.PNG" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

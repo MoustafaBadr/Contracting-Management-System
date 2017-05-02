@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="1010.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FXMLDocumentController">
+   <children>
+      <JFXTextField fx:id="first_name" labelFloat="true" layoutX="25.0" layoutY="124.0" maxWidth="136.0" minWidth="122.0" prefHeight="31.0" prefWidth="122.0" promptText="First_Name" style="-fx-background-color: #D8E6E7;" />
+      <JFXTextField fx:id="last_name" labelFloat="true" layoutX="175.0" layoutY="124.0" maxWidth="132.0" minWidth="122.0" prefHeight="31.0" prefWidth="132.0" promptText="Last_Name" style="-fx-background-color: #D8E6E7;" />
+      <JFXTextField fx:id="phone" labelFloat="true" layoutX="24.0" layoutY="161.0" maxWidth="135.0" minWidth="122.0" prefHeight="31.0" prefWidth="122.0" promptText="Phone" style="-fx-background-color: #D8E6E7;" />
+      <JFXTextField fx:id="salary" labelFloat="true" layoutX="175.0" layoutY="161.0" maxWidth="135.0" minWidth="132.0" prefHeight="31.0" prefWidth="132.0" promptText="Salary" style="-fx-background-color: #D8E6E7;" />
+      <JFXTextField fx:id="email" labelFloat="true" layoutX="25.0" layoutY="198.0" maxWidth="135.0" minWidth="122.0" prefHeight="31.0" prefWidth="122.0" promptText="Email" style="-fx-background-color: #D8E6E7;" />
+      <JFXTextField fx:id="address" labelFloat="true" layoutX="175.0" layoutY="198.0" maxWidth="135.0" minWidth="132.0" prefHeight="31.0" prefWidth="132.0" promptText="Address" style="-fx-background-color: #D8E6E7;" />
+      <Separator layoutX="335.0" layoutY="7.0" orientation="VERTICAL" prefHeight="483.0" prefWidth="5.0" />
+      <TableView fx:id="table" layoutX="348.0" layoutY="7.0" prefHeight="483.0" prefWidth="656.0">
+         <columns>
+            <TableColumn fx:id="firstnameColumn" prefWidth="75.0" text="First_name" />
+            <TableColumn fx:id="lastnameColumn" prefWidth="75.0" text="Last_Name" />
+            <TableColumn fx:id="phoneColumn" prefWidth="75.0" text="Phone" />
+            <TableColumn fx:id="salaryColumn" prefWidth="75.0" text="Salary" />
+            <TableColumn fx:id="emailColumn" prefWidth="113.0" text="Email" />
+            <TableColumn fx:id="addressColumn" prefWidth="164.0" text="Address" />
+            <TableColumn fx:id="statColumn" prefWidth="164.0" text="State" />
+            <TableColumn fx:id="jopColumn" prefWidth="75.0" text="Jop_Name" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <JFXButton buttonType="RAISED" layoutX="89.0" layoutY="285.0" onAction="#save" prefHeight="32.0" prefWidth="138.0" style="-fx-background-color: #30A9DE; -fx-border-radius: 50px; -fx-background-radius: 50px;" text="Save" textFill="#fcfafa">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="90.0" layoutY="390.0" onAction="#update" prefHeight="32.0" prefWidth="136.0" style="-fx-background-color: #30A9DE; -fx-border-radius: 50px; -fx-background-radius: 50px;" text="Update" textFill="#fcfafa">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="90.0" layoutY="338.0" onAction="#delete" prefHeight="32.0" prefWidth="137.0" style="-fx-background-color: #30A9DE; -fx-border-radius: 50px; -fx-background-radius: 50px;" text="Delete" textFill="#fcfafa">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="91.0" layoutY="445.0" onAction="#resetFields" prefHeight="19.0" prefWidth="136.0" style="-fx-background-color: #30A9DE; -fx-border-radius: 50px; -fx-background-radius: 50px;" text="Reset" textFill="#fcfafa">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXComboBox fx:id="jopBox" layoutX="23.0" layoutY="29.0" prefHeight="25.0" prefWidth="122.0" promptText="Search With" style="-fx-background-color: #D8E6E7;" />
+      <JFXButton buttonType="RAISED" layoutX="202.0" layoutY="26.0" onAction="#search" prefHeight="32.0" prefWidth="74.0" style="-fx-background-color: #30A9DE; -fx-border-radius: 50px; -fx-background-radius: 50px;" text="Search" textFill="#fcfafa">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="choise" labelFloat="true" layoutX="23.0" layoutY="65.0" maxWidth="138.0" minWidth="122.0" prefHeight="31.0" prefWidth="122.0" promptText="Enter Your Choise" style="-fx-background-color: #D8E6E7;" />
+      <JFXComboBox fx:id="statebox" layoutX="25.0" layoutY="238.0" prefHeight="25.0" prefWidth="122.0" promptText="chose state" style="-fx-background-color: #D8E6E7;" />
+      <JFXComboBox fx:id="job2" layoutX="174.0" layoutY="238.0" prefHeight="25.0" prefWidth="132.0" promptText="Jop" style="-fx-background-color: #D8E6E7;" />
+   </children>
+</AnchorPane>

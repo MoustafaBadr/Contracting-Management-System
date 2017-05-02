@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="603.0" prefWidth="999.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AboutUsController">
+   <children>
+      <BorderPane prefHeight="540.0" prefWidth="723.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <bottom>
+            <AnchorPane prefHeight="85.0" prefWidth="683.0" style="-fx-border-color: ff4e3c; -fx-border-width: 5px 0px 0px 0px " BorderPane.alignment="CENTER" />
+         </bottom>
+         <center>
+            <AnchorPane prefHeight="388.0" prefWidth="683.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" layoutX="1.0" layoutY="10.0" prefHeight="344.0" prefWidth="683.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="10.0">
+                     <children>
+                        <AnchorPane prefHeight="392.0" prefWidth="648.0">
+                           <children>
+                              <Label layoutX="31.0" layoutY="-2.0" prefHeight="27.0" prefWidth="81.0" text="Name " textFill="#434242">
+                                 <font>
+                                    <Font name="System Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="24.0" layoutY="41.0" prefHeight="35.0" prefWidth="200.0" text="Mahmoud Ayman Elsadany">
+                                 <font>
+                                    <Font name="System Bold Italic" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="24.0" layoutY="76.0" prefHeight="35.0" prefWidth="200.0" text="Mostafa Abd Elfatah Ragab">
+                                 <font>
+                                    <Font name="System Bold Italic" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="24.0" layoutY="146.0" prefHeight="35.0" prefWidth="200.0" text="Mostafa Mahmoud Ghonem">
+                                 <font>
+                                    <Font name="System Bold Italic" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="24.0" layoutY="111.0" prefHeight="35.0" prefWidth="200.0" text="Mostafa Mahmoud Elabbasy">
+                                 <font>
+                                    <Font name="System Bold Italic" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="24.0" layoutY="179.0" prefHeight="35.0" prefWidth="200.0" text="Mostafa Mohamed Badr">
+                                 <font>
+                                    <Font name="System Bold Italic" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="24.0" layoutY="244.0" prefHeight="35.0" prefWidth="200.0" text="Ahmed Fadel">
+                                 <font>
+                                    <Font name="System Bold Italic" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="24.0" layoutY="210.0" prefHeight="35.0" prefWidth="200.0" text="Ahmed Wageh">
+                                 <font>
+                                    <Font name="System Bold Italic" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="24.0" layoutY="276.0" prefHeight="35.0" prefWidth="200.0" text="Mekhail Fayez Kamal">
+                                 <font>
+                                    <Font name="System Bold Italic" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="438.0" layoutY="276.0" prefHeight="35.0" prefWidth="200.0" text="4" textFill="#973737">
+                                 <font>
+                                    <Font name="System Italic" size="21.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="438.0" layoutY="210.0" prefHeight="35.0" prefWidth="200.0" text="1" textFill="#973737">
+                                 <font>
+                                    <Font name="System Italic" size="21.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="438.0" layoutY="244.0" prefHeight="35.0" prefWidth="200.0" text="1" textFill="#973737">
+                                 <font>
+                                    <Font name="System Italic" size="21.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="438.0" layoutY="179.0" prefHeight="35.0" prefWidth="200.0" text="4" textFill="#973737">
+                                 <font>
+                                    <Font name="System Italic" size="21.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="438.0" layoutY="111.0" prefHeight="35.0" prefWidth="200.0" text="4" textFill="#973737">
+                                 <font>
+                                    <Font name="System Italic" size="21.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="438.0" layoutY="146.0" prefHeight="35.0" prefWidth="200.0" text="4" textFill="#973737">
+                                 <font>
+                                    <Font name="System Italic" size="21.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="438.0" layoutY="76.0" prefHeight="35.0" prefWidth="200.0" text="4" textFill="#973737">
+                                 <font>
+                                    <Font name="System Italic" size="21.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="438.0" layoutY="41.0" prefHeight="35.0" prefWidth="200.0" text="4" textFill="#973737">
+                                 <font>
+                                    <Font name="System Italic" size="21.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="434.0" prefHeight="27.0" prefWidth="81.0" text="Sec" textFill="#973737">
+                                 <font>
+                                    <Font name="System Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" top="10.0" />
+               </padding>
+            </AnchorPane>
+         </center>
+         <padding>
+            <Insets left="20.0" right="20.0" />
+         </padding>
+         <top>
+            <AnchorPane prefHeight="111.0" prefWidth="683.0" style="-fx-border-color: #ff4e3c; -fx-border-style: solid; -fx-border-width: 0px 0px 5px;" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" layoutX="194.0" layoutY="28.0" prefHeight="133.0" prefWidth="831.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <AnchorPane prefHeight="106.0" prefWidth="469.0">
+                           <children>
+                              <Label layoutX="149.0" layoutY="42.0" text="About Us" textFill="#780b0b">
+                                 <font>
+                                    <Font name="BatangChe" size="43.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

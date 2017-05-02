@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="620.0" prefWidth="1010.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EmployeeController">
+   <children>
+      <Pane layoutX="29.0" layoutY="6.0" prefHeight="79.0" prefWidth="957.0">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="22.0" layoutY="18.0" onAction="#mange" prefHeight="41.0" prefWidth="222.0" style="-fx-background-color: #30A9DE; -fx-background-radius: 50px; -fx-border-radius: 50px;" text="Manege Employee">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="360.0" layoutY="18.0" onAction="#worker" prefHeight="41.0" prefWidth="222.0" style="-fx-background-color: #30A9DE; -fx-background-radius: 50px; -fx-border-radius: 50px;" text="Workers">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="704.0" layoutY="18.0" onAction="#salary" prefHeight="41.0" prefWidth="222.0" style="-fx-background-color: #30A9DE; -fx-background-radius: 50px; -fx-border-radius: 50px;" text="Salary">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Separator layoutX="54.0" layoutY="96.0" prefHeight="6.0" prefWidth="907.0" />
+      <Pane fx:id="pane" layoutY="120.0" prefHeight="500.0" prefWidth="1010.0" style="-fx-background-color: #fcfafa;" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="476.0" prefWidth="1086.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StockController">
+   <children>
+      <JFXTextField fx:id="ID_txt" labelFloat="true" layoutX="14.0" layoutY="48.0" maxWidth="326.0" minWidth="295.0" prefHeight="44.0" prefWidth="314.0" promptText="id" style="-fx-background-color: #D8E6E7;">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="PName_txt" labelFloat="true" layoutX="14.0" layoutY="118.0" maxWidth="326.0" minWidth="295.0" prefHeight="44.0" prefWidth="314.0" promptText="Product Name" style="-fx-background-color: #D8E6E7;">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="Amount" labelFloat="true" layoutX="14.0" layoutY="185.0" maxWidth="326.0" minWidth="295.0" prefHeight="44.0" prefWidth="314.0" promptText="Amount" style="-fx-background-color: #D8E6E7;">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="Price_txt" labelFloat="true" layoutX="18.0" layoutY="249.0" maxWidth="314.0" minWidth="301.0" prefHeight="44.0" prefWidth="314.0" promptText="Price" style="-fx-background-color: #D8E6E7;">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXComboBox fx:id="supplier_combo" layoutX="20.0" layoutY="317.0" prefHeight="44.0" prefWidth="314.0" promptText="supplier_ID" style="-fx-background-color: #D8E6E7;" />
+      <JFXButton fx:id="Add" buttonType="RAISED" layoutX="26.0" layoutY="404.0" onMouseClicked="#ADD" prefHeight="37.0" prefWidth="118.0" style="-fx-background-color: #3498DB; -fx-border-radius: 50px; -fx-background-radius: 50px;" text="ADD" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="Update" buttonType="RAISED" layoutX="181.0" layoutY="402.0" onMouseClicked="#UPDATE" prefHeight="37.0" prefWidth="108.0" style="-fx-background-color: #3498DB; -fx-border-radius: 50px; -fx-background-radius: 50px;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="table" layoutX="384.0" layoutY="107.0" prefHeight="349.0" prefWidth="643.0">
+        <columns>
+            <TableColumn fx:id="ID_table" prefWidth="81.0" text="ID" />
+          <TableColumn fx:id="PName_table" prefWidth="163.0" text="Proudct Name" />
+            <TableColumn fx:id="Amount_table" prefWidth="134.0" text="Amount" />
+            <TableColumn fx:id="Supplier_table" prefWidth="147.0" text="Supplier_ID" />
+            <TableColumn fx:id="price_table" prefWidth="117.0" text="Price" />
+        </columns>
+      </TableView>
+      <JFXTextField fx:id="ID_Search" layoutX="389.0" layoutY="35.0" maxWidth="601.0" minWidth="395.0" prefHeight="44.0" prefWidth="395.0" promptText="ID" style="-fx-background-color: #D8E6E7;">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="Delet" buttonType="RAISED" layoutX="917.0" layoutY="42.0" onMouseClicked="#DELETE" prefHeight="37.0" prefWidth="108.0" style="-fx-background-color: #3498DB; -fx-border-radius: 50px; -fx-background-radius: 50px;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="Search_bt" alignment="CENTER" buttonType="RAISED" layoutX="789.0" layoutY="41.0" onMouseClicked="#search" prefHeight="37.0" prefWidth="108.0" style="-fx-background-color: #3498DB; -fx-border-radius: 50px; -fx-background-radius: 50px;" text=" Search" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

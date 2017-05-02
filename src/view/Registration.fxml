@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" stylesheets="@../style/MainStyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RegistrationController">
+    <children>
+      <BorderPane layoutX="242.0" layoutY="94.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <bottom>
+            <HBox alignment="CENTER" BorderPane.alignment="CENTER">
+               <children>
+                  <Hyperlink fx:id="hlLogin" onAction="#hlLogin" text="Already Have an Account? Login">
+                     <HBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                     </HBox.margin>
+                  </Hyperlink>
+               </children>
+            </HBox>
+         </bottom>
+         <top>
+            <HBox alignment="CENTER" BorderPane.alignment="CENTER" />
+         </top>
+         <center>
+            <HBox alignment="CENTER" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane maxHeight="296.0" maxWidth="1000.0" minHeight="200.0" minWidth="350.0" prefHeight="296.0" prefWidth="385.0">
+                     <children>
+                        <TextField fx:id="tfUserName" layoutX="10.0" layoutY="69.0" prefHeight="33.0" prefWidth="362.0" promptText="Enter User Name">
+                           <tooltip>
+                              <Tooltip text="User Name will need to Login" />
+                           </tooltip></TextField>
+                        <TextField fx:id="tfFullName" layoutX="14.0" layoutY="115.0" prefHeight="33.0" prefWidth="360.0" promptText="Enter Full Name" />
+                        <PasswordField fx:id="pfUserPassword" layoutX="13.0" layoutY="163.0" prefHeight="33.0" prefWidth="360.0" promptText="Type Password" />
+                        <PasswordField fx:id="pfReUserPassword" layoutX="15.0" layoutY="210.0" onKeyReleased="#pfKeyTyped" prefHeight="33.0" prefWidth="358.0" promptText="Re-Type Password" />
+                        <Button fx:id="btnSignUp" layoutX="123.0" layoutY="261.0" mnemonicParsing="false" onMouseClicked="#btnRegistration" prefHeight="37.0" prefWidth="106.0" style="-fx-background-color: #3498DB;" text="Signup">
+                           <effect>
+                              <DropShadow color="#e1dede" height="11.99" radius="5.4625" width="11.86" />
+                           </effect></Button>
+                        <Text layoutX="115.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registration">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

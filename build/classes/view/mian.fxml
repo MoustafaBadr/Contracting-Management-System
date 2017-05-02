@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane prefHeight="649.0" prefWidth="1215.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Controllers">
+   <bottom>
+      <AnchorPane prefHeight="85.0" prefWidth="683.0" style="-fx-border-color: ff4e3c; -fx-border-width: 5px 0px 0px 0px;" BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+      <AnchorPane prefHeight="357.0" prefWidth="683.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" layoutX="1.0" layoutY="10.0" prefHeight="344.0" prefWidth="683.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="10.0">
+               <children>
+                  <AnchorPane prefHeight="392.0" prefWidth="648.0">
+                     <children>
+                        <VBox layoutY="-2.0" onMouseClicked="#add" prefHeight="392.0" prefWidth="648.0" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-2.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="55.0" prefWidth="641.0" text="Organization Name :">
+                                 <font>
+                                    <Font name="System Bold" size="19.0" />
+                                 </font>
+                              </Label>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Contracting Company management system" textAlignment="CENTER" wrappingWidth="647.7294921875">
+                                 <font>
+                                    <Font name="System Bold Italic" size="19.0" />
+                                 </font></Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="CCMS" textAlignment="CENTER" wrappingWidth="647.7294921875">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font></Text>
+                           </children>
+                        </VBox>
+                        <GridPane layoutX="168.0" layoutY="137.0" prefHeight="193.0" prefWidth="358.0">
+                           <children>
+                              <Label text="Total employee :" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="System Bold Italic" size="14.0" />
+                                 </font></Label>
+                              <Label prefHeight="25.0" prefWidth="115.0" text=" Total customer :">
+                                 <font>
+                                    <Font name="System Bold Italic" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Total Supplyer :" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font name="System Bold Italic" size="14.0" />
+                                 </font></Label>
+                              <Label fx:id="total_employee" text="Label" textFill="#973737" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="total_supplyer" text="Label" textFill="#973737" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Total Project :" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font name="System Bold Italic" size="14.0" />
+                                 </font></Label>
+                              <Label fx:id="total_poject" text="Label" textFill="#973737" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="25.0" prefWidth="86.0" text=" Total store :" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font name="System Bold Italic" size="14.0" />
+                                 </font></Label>
+                              <Label fx:id="total_store" prefHeight="30.0" prefWidth="85.0" text="Label" textFill="#070707" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="total_customer" text="Label" textFill="#973737" GridPane.columnIndex="2">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" top="10.0" />
+         </padding>
+      </AnchorPane>
+   </center>
+   <padding>
+      <Insets left="20.0" right="20.0" />
+   </padding>
+   <top>
+      <AnchorPane prefHeight="111.0" prefWidth="683.0" style="-fx-border-color: #ff4e3c; -fx-border-style: solid; -fx-border-width: 0px 0px 5px;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" layoutX="194.0" layoutY="28.0" prefHeight="133.0" prefWidth="831.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <AnchorPane prefHeight="106.0" prefWidth="469.0" />
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

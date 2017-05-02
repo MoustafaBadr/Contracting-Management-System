@@ -1,0 +1,6 @@
+
+.button:hover{
+    -fx-font-size: 12px;
+    -fx-text-fill: black;
+
+}
